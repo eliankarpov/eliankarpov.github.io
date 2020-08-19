@@ -1,0 +1,269 @@
+/* stylelint-disable property-no-vendor-prefix */
+
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #000;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #E2D5F0;
+  border: 1px solid #E2D5F0;
+}
+
+
+/* Social media buttons */
+.fa {
+  padding: 15px;
+  font-size: 15px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: #333;
+  color: white;
+}
+
+
+/*
+ * Base structure
+ */
+
+html{
+  height: 100%;
+  background-color: #fff;
+  color: #1a1a1a;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  scroll-behavior: smooth;
+
+
+}
+
+.typewriter h1{
+    color: #000;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  margin-top: 50px;
+/*
+  -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, .5); */
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.clearfix {
+
+    background-color: #fff;
+    /* background: linear-gradient(#E8E8E8, #fff); */
+    left: 0;
+}
+
+
+/* Padding for spacing */
+.inner {
+
+  padding: 20px;
+  width: 100%;
+}
+
+.cover{
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+/* Spacing to avoid overlay */
+/* .inner-cover{
+    margin-top: 50px;
+} */
+
+
+
+/*
+ * Header
+ */
+
+ /* NO HEADER RN*/
+/* .masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+} */
+
+/* .inner{
+    background-color: #fff;
+
+} */
+
+.navbar-nav > li {
+  display: inline-block;
+
+}
+.navbar-nav > li + li {
+  margin-left: 20px;
+}
+.navbar-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a; /* IE8 proofing */
+  color: rgba(0, 0, 0, .35);
+  border-bottom: 2px solid transparent;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #111;
+  border-bottom-color: rgba(17, 17, 17, 0.6);
+}
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+  color: #111;
+  color: rgba(17, 17, 17, 0.8);
+  border-bottom-color: #111;
+}
+
+@media (min-width: 768px) {
+
+  .navbar-nav {
+    float: left;
+
+    /* width: 60%; */
+  }
+
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: 700;
+
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #282828; /* IE8 proofing */
+  color: rgba(40, 40, 40, 0.9);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+  }
+  .mastfoot .inner {
+    /* position: bottom; */
+    bottom: 0;
+    width:100%;
+    height:100%;
+    text-align: center;
+  }
+
+  .mastfoot .socials {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .site-wrapper-inner {
+    vertical-align: middle; /* Start the vertical centering */
+  }
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+
+  }
+}
+
+@media (min-width: 992px) {
+
+
+  .cover-container {
+    width: 700px;
+  }
+
+  .mastfoot,
+  .masthead{
+      width: 100%;
+  }
+}
