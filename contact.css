@@ -230,12 +230,11 @@ hr.pretty{
   .mastfoot .inner {
       color: #282828; /* IE8 proofing */
       color: rgba(40, 40, 40, 0.9);
-      font-family: 'Comfortaa';
-      position: relative;
+      font-family: 'Comfortaa'; 
       bottom: 0;
       margin-left: 0;
       text-align: center;
-      /* width:100%; */
+
   }
 
   .mastfoot .socials {
