@@ -67,7 +67,9 @@ a:hover {
 .fa-sitemap,
 .fa-code-branch,
 .fa-server,
-.fa-file-code {
+.fa-file-code,
+.fa-js,
+.fa-react {
     padding: 10px;
     font-size: 15px;
     background: MistyRose;
@@ -298,6 +300,9 @@ hr.pretty{
 
 .card-horizontal .img-square-wrapper {
     width:20%;
+    margin-top: auto;
+    margin-bottom: auto;
+   
 }
 
 
